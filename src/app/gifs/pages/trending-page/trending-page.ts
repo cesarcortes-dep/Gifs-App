@@ -1,9 +1,27 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { GifsService } from './../../services/gifs.service';
+import { Component, inject } from '@angular/core';
+import { GiftList } from '../../components/gift-list/gift-list';
 
 @Component({
   selector: 'app-trending-page',
-  imports: [],
+  imports: [GiftList],
   templateUrl: './trending-page.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class TrendingPage { }
+export default class TrendingPage {
+  imageUrls: string[] = [
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg',
+  ];
+
+  GifsService = inject(GifsService);
+}
