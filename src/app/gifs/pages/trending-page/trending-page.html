@@ -3,6 +3,6 @@
 <div class="py-5 space-y-8">
   <div>
     <h2 class="text-2xl font-bold text-slate-800 mb-4">Image Gallery</h2>
-    <gift-list [gifts]="imageUrls" />
+    <gift-list [gifts]="GifsService.trendingGifs()" />
   </div>
 </div>

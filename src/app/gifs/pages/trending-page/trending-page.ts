@@ -8,7 +8,7 @@ import { GiftList } from '../../components/gift-list/gift-list';
   templateUrl: './trending-page.html',
 })
 export default class TrendingPage {
-  imageUrls: string[] = [
+  /*   imageUrls: string[] = [
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg',
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
@@ -22,6 +22,6 @@ export default class TrendingPage {
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg',
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg',
   ];
-
+ */
   GifsService = inject(GifsService);
 }
