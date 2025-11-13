@@ -2,7 +2,7 @@
 
 A modern GIF search and trending application built with Angular 20, featuring a clean dashboard interface with Tailwind CSS styling and Giphy API integration.
 
-🌐 **Live Demo**: [https://angular-gifs-apps.netlify.app](https://angular-gifs-apps.netlify.app/dashboard/trending)
+🌐 **Live Demo**: [https://angular-gifs-apps.netlify.app](https://angular-gifs-apps.netlify.app/)
 
 ## 🚀 Features
 
